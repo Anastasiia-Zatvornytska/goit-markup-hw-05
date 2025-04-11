@@ -398,6 +398,10 @@ align-items: center;
     display: flex;
             }
 
+.footer-modal-block {
+    margin-left: 80px;
+}
+
 .footer-form {display: flex;
 gap: 24px;}
 
@@ -409,14 +413,10 @@ gap: 24px;}
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 padding-left: 16px;
 padding-right: 16px;
-margin-left: 80px;
 font-size: 12px;
 line-height: 2;
 letter-spacing: 0.04em;
 color: #ffffff;
-}
-
-.footer-text-subscribe {margin-left: 80px;
 }
 
 input::placeholder {color: #ffffff;}
@@ -437,6 +437,15 @@ height: 40px;
 justify-content: center;
 cursor: pointer;
 border: none;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-btn:hover {
+    background-color: #404bbf;
+}
+
+.footer-btn:focus {
+    background-color: #404bbf;
 }
 
 .footer-btn-icon {fill: #FFFFFF;
@@ -561,8 +570,15 @@ font-weight: 500;
     color: #fff;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+.modal-btn:hover {
+            background-color: #404bbf;
+        }
     
-}
+.modal-btn:focus {
+            background-color: #404bbf;
+        }
 
 .modal-textarea {border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
@@ -591,25 +607,17 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    align-items: center;
-span {width: 16px;
-height: 16px;
-border-radius: 2px; 
-border: 1px solid rgba(46, 47, 66, 0.4);
-margin-right: 8px;
-display: flex;
-align-items: center;
-justify-content: center;
-fill: transparent;
-}
-}
+    display: flex;
+    align-items: center;}
 
 .modal-checkbox {width: 16px;
 height: 16px;
 border: 1px solid rgba(46, 47, 66, 0.4);
 border-radius: 2px;
-display: inline-flex;
-align-items: center;
+margin-right: 8px;
+display: inline;
+text-align: center;
+line-height: 16px;
 justify-content: center;
 fill: transparent;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
